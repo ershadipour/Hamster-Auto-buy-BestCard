@@ -2,7 +2,7 @@
 
 ## Auto buy
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/Hamster-Auto-buy-BestCard/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/ershadipour/Hamster-Auto-buy-BestCard/blob/main/install.sh)
 ```
 
 ### Auto Clicker

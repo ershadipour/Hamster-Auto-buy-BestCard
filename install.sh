@@ -137,7 +137,8 @@ main() {
                 if echo "$purchase_status" | grep -q "error_code"; then
                     wait_for_cooldown "$cooldown"
                 else
-                    echo -e "${green}Upgrade ${yellow}'$best_item_id'${green} purchased successfully.${rest}"
+                    purchase_time=$(date +"%Y-%m-%d %H:%M:%S")
+                    echo -e "${green}Upgrade ${yellow}'$best_item_id'${green} purchased successfully at ${cyan}$purchase_time${green}.${rest}"
                     sleep_duration=$((RANDOM % 8 + 5))
                     echo -e "${green}Waiting for ${yellow}$sleep_duration${green} seconds before next purchase...${rest}"
                     sleep "$sleep_duration"
